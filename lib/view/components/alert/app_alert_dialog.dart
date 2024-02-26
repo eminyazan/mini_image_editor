@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_image_editor/core/utils/extensions/navigation_extension/navigation_extension.dart';
 import 'package:mini_image_editor/main.dart';
-import 'package:mini_image_editor/view/constants/app_colors/app_colors.dart';
 
 enum AlertType { success, error, warning }
 
@@ -102,7 +101,7 @@ class AppAlert {
                   TextButton(
                     child: Text(
                       cancelText,
-                      style: const TextStyle(fontSize: 15, color: AppColors.kcLightModeMainSecondary),
+                      style: const TextStyle(fontSize: 15, color: Colors.black54),
                     ),
                     onPressed: () {
                       if (cancelPressed != null) {
@@ -117,7 +116,7 @@ class AppAlert {
                     mainText ?? 'OK',
                     style: const TextStyle(
                       fontSize: 15,
-                      color: AppColors.kcLightModeMainSecondary,
+                      color: Colors.black54,
                     ),
                   ),
                   onPressed: () {
