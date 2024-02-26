@@ -1,16 +1,18 @@
-# mini_image_editor
+# Mini Image Editor App
 
 Mini image editor by Emin YAZAN
 
-## Getting Started
+## Capabilities
+#### * Filters (Grayscale, Monochrome, Sepia)
+#### * Rotation
+#### * Saving to locale
+#### * Zoom images
+#### * Disabled screen record
 
-This project is a starting point for a Flutter application.
+## Usage 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://github.com/eminyazan/mini_image_editor/assets/61870480/883df48a-77a9-4d16-9795-b622005b24e1
+
