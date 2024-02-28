@@ -23,5 +23,6 @@ class LocalDatabase implements LocalDatabaseController {
   @override
   List<String>? getSavedImagesPaths() => localDatabaseProvider.getSavedImagesPaths();
 
-
+  @override
+  Future<void> deleteFromLocale(int index) async => await localDatabaseProvider.deleteFromLocale(index);
 }

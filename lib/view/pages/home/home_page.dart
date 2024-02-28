@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
 
   _checkPreviousEdits() async {
     _previousRecords = _homePageViewModel.getSavedImagesPaths();
+    setState(() {});
   }
 
   @override
@@ -59,7 +60,11 @@ class _HomePageState extends State<HomePage> {
                     centerText: true,
                   ),
                   IconButton(
-                    onPressed: () => context.push(PreviousEditsPage(paths: _previousRecords!)),
+                    onPressed: () async {
+                      await context.push(PreviousEditsPage(paths: _previousRecords!)).then((_) {
+                        _checkPreviousEdits();
+                      });
+                    },
                     icon: const Icon(Icons.history, size: 37),
                   )
                 ],

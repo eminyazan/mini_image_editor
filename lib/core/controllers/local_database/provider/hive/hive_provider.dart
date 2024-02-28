@@ -18,6 +18,8 @@ class HiveProvider extends LocalDatabaseController {
   }
 
   @override
-  List<String>? getSavedImagesPaths()  => _records.values.toList();
+  List<String>? getSavedImagesPaths() => _records.values.toList();
 
+  @override
+  Future<void> deleteFromLocale(int index) async => await _records.deleteAt(index);
 }
